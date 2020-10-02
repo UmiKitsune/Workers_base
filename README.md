@@ -1,4 +1,5 @@
-Проэкт построен с помощью сервера <a href="https://github.com/typicode/json-server">json-server</a>
+
+##Проeкт построен с помощью сервера <a href="https://github.com/typicode/json-server">json-server</a>, поэтому для запуска необходимо выполнить ряд действий.
 
 
 
