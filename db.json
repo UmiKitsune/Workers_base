@@ -45,14 +45,14 @@
     {
       "image": "=)",
       "name": "Семен",
-      "surname": "Иванов",
+      "surname": "Петров",
       "birthday": "1996-06-12",
       "age": 23,
       "position": "Технический писатель",
       "remote": false,
-      "city": "Томск  ",
-      "street": "ул. Ленина  ",
-      "house": "18 ",
+      "city": "Томск   ",
+      "street": "ул. Ленина   ",
+      "house": "18  ",
       "apartment": "59",
       "id": 21
     }
