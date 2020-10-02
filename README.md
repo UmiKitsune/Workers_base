@@ -26,7 +26,7 @@
 </ol>
     
    <h3>ИЛИ</h3>
-   Можно посмотреть <a htef="https://umikitsune.github.io/Demo_for_Worker-base/">видео</a>
+   Можно посмотреть <a href="https://umikitsune.github.io/Workers_base/">видео<a>
    
    Первая часть как запустить, вторая как работает.
 
