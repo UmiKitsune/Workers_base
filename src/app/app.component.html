@@ -7,22 +7,22 @@
   <button (click)="deleteWorker(selectedWorker)">Удалить</button>
   <div class="grid" >
     <div class="headline">
-      <!-- <div class="headline-item image">Превью</div> -->
+      <!-- <div class="headline-item image">Превью</div>  -->
       <div class="headline-item name">Имя</div>
       <div class="headline-item surname">Фамилия</div>
       <div class="headline-item birthday">Дата рождения</div>
-      <div class="headline-item age">Возраст</div>
+      <!-- <div class="headline-item age">Возраст</div> -->
       <div class="headline-item position">Должность</div>
       <div class="headline-item remote">Удаленная работа</div>
       <div class="headline-item adress">Адрес проживания</div>
     </div>
     <div class="person-card" >
       <div class="person" *ngFor="let worker of workers | workerFilter: searchWorker" (click)="chooseWorker(worker)">
-        <div class="person-item image">{{worker.image}}</div>
+        <!-- <div class="person-item image">{{worker.image}}</div> -->
         <div class="person-item name">{{worker.name}}</div>
         <div class="person-item surname">{{worker.surname}}</div>
         <div class="person-item birthday">{{worker.birthday}}</div>
-        <div class="person-item age">{{worker.age}}</div>
+        <!-- <div class="person-item age">{{worker.age}}</div> -->
         <div class="person-item position">{{worker.position}}</div>
         <div class="person-item remote">
           <input type="checkbox" name="myInput" class="remoteInput" disabled [checked]="worker.remote">
