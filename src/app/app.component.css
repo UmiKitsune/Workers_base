@@ -144,7 +144,7 @@ fieldset {
 .headline, .person {
     display: inline-grid;
     width: 100%;
-    grid-template-columns: repeat(8, 1fr);
+    grid-template-columns: repeat(5, 1fr) 300px;
 }
 
 .headline-item, .person-item {
