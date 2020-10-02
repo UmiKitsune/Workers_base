@@ -24,6 +24,10 @@
   <li>Затем <b>json-server --watch db.json</b>, нажать enter</li>
   <li>НЕ закрывая командную строку перейти на <a href="https://umikitsune.github.io/Workers_base/">сайт проекта<a></li>
 </ol>
+    
+   <h3>ИЛИ</h3>
+   Можно посмотреть видео -> <a htef="https://umikitsune.github.io/Demo_for_Worker-base/"></a>
+   Первая часть как запустить, вторая как работает.
 
 
 
