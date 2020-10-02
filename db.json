@@ -1,0 +1,102 @@
+{
+  "workers": [
+    {
+      "image": "=)",
+      "name": "Gtnzн",
+      "surname": "Иванов",
+      "birthday": "2000-12-01",
+      "age": 23,
+      "position": "Технический писатель",
+      "remote": true,
+      "city": "СПб   ",
+      "street": "Невский проспект  ",
+      "house": "3/6   ",
+      "apartment": "1",
+      "id": 14
+    },
+    {
+      "image": "=)",
+      "name": "max1",
+      "surname": "frayu",
+      "birthday": "1889-12-12",
+      "age": 23,
+      "position": "Backend-разработчик",
+      "remote": false,
+      "city": "ехо        ",
+      "street": "малых монет        ",
+      "house": "14      ",
+      "apartment": "2",
+      "id": 15
+    },
+    {
+      "image": "=)",
+      "name": "Ekaterina",
+      "surname": "gtruhtfgh",
+      "birthday": "1993-02-17",
+      "age": 23,
+      "position": "Frontend-разработчик",
+      "remote": true,
+      "city": "САНКТ-ПЕТЕРБУРГ ",
+      "street": "проспект Космонавтов ",
+      "house": "51 ",
+      "apartment": "77",
+      "id": 16
+    },
+    {
+      "image": "=)",
+      "name": "арпаив",
+      "surname": "апаисиме",
+      "birthday": "2020-09-09",
+      "age": 23,
+      "position": "Web-дизайнер",
+      "remote": false,
+      "city": "ивапв ",
+      "street": "павпкпа ",
+      "house": "45 ",
+      "apartment": "45",
+      "id": 17
+    },
+    {
+      "image": "=)",
+      "name": "ипаоапп",
+      "surname": "рапренгки",
+      "birthday": "2020-09-04",
+      "age": 23,
+      "position": "Бухгалтер",
+      "remote": false,
+      "city": "рпаврке ",
+      "street": "рапркер ",
+      "house": "парапр ",
+      "apartment": "рпарк",
+      "id": 18
+    },
+    {
+      "image": "=)",
+      "name": "",
+      "surname": "",
+      "birthday": "",
+      "age": 23,
+      "position": "",
+      "remote": false,
+      "city": " ",
+      "street": " ",
+      "house": " ",
+      "apartment": "",
+      "id": 19
+    },
+    {
+      "image": "=)",
+      "name": "",
+      "surname": "",
+      "birthday": "",
+      "age": 23,
+      "position": "",
+      "remote": false,
+      "city": " ",
+      "street": " ",
+      "house": " ",
+      "apartment": "",
+      "id": 20
+    }
+  ]
+}

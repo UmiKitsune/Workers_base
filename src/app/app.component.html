@@ -1,0 +1,105 @@
+<div class="container">
+  
+  <input type="text" placeholder="поиск" [(ngModel)]="searchWorker">
+  
+  <button class="open-btn"  (click)="openClosePopUp()" (click)="hideChangeBtn()">Добавить</button>
+  <button (click)="changeProfile(selectedWorker)" (click)="hideSaveBtn()">Редактировать</button>
+  <button (click)="deleteWorker(selectedWorker)">Удалить</button>
+  <div class="grid" >
+    <div class="headline">
+      <div class="headline-item image">Превью</div>
+      <div class="headline-item name">Имя</div>
+      <div class="headline-item surname">Фамилия</div>
+      <div class="headline-item birthday">Дата рождения</div>
+      <div class="headline-item age">Возраст</div>
+      <div class="headline-item position">Должность</div>
+      <div class="headline-item remote">Удаленная работа</div>
+      <div class="headline-item adress">Адрес проживания</div>
+    </div>
+    <div class="person-card" >
+      <div class="person" *ngFor="let worker of workers | workerFilter: searchWorker" (click)="chooseWorker(worker)">
+        <div class="person-item image">{{worker.image}}</div>
+        <div class="person-item name">{{worker.name}}</div>
+        <div class="person-item surname">{{worker.surname}}</div>
+        <div class="person-item birthday">{{worker.birthday}}</div>
+        <div class="person-item age">{{worker.age}}</div>
+        <div class="person-item position">{{worker.position}}</div>
+        <div class="person-item remote">
+          <input type="checkbox" name="myInput" class="remoteInput" disabled [checked]="worker.remote">
+        </div>
+        <div class="person-item adress">{{worker.city}} {{worker.street}} {{worker.house}}  кв. {{worker.apartment}}</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!--Модальное окно-->
+<div class="popup_container">
+  <div class="person-list-container list-container">
+    <div class="person-list-header">
+      <h3>Добавление/Редактирование</h3>
+      <button class="close-btn" (click)="openClosePopUp()">&times;</button>
+    </div>
+    <div class="person-list-main">
+      <div class="photo">
+        <div class="photo-img"></div>
+      </div>
+      <div class="main-form">
+        <form>
+          <fieldset>
+            <input type="text" placeholder="Имя" name="name" [(ngModel)]="workerName">
+            <input type="text" placeholder="Фамилия" name="surname" [(ngModel)]="workerSurname">
+            <!--<input type="text" placeholder="Дата рождения" id="hide_input" >-->
+            <input type="date" name="birthday" id="show_input" class="chang" [(ngModel)]="workerBirthday">
+            <select onchange="this.setAttribute('data-selected', true)" name="position" [(ngModel)]="workerPosition">
+              <option disabled selected hidden>Должность</option>
+              <option>Frontend-разработчик</option>
+              <option>Backend-разработчик</option>
+              <option>QA-инженер</option>
+              <option>HR-специалист</option>
+              <option>Бухгалтер</option>
+              <option>Разработчик С++</option>
+              <option>Web-дизайнер</option>
+              <option>Технический писатель</option>
+            </select>
+            <input type="checkbox" name="remote" class="remote" [(ngModel)]="workerRemote">
+          </fieldset>
+          
+          <fieldset>
+            <input type="text" name="city" placeholder="Город" [(ngModel)]="workerCity">
+            <input type="text" name="street" placeholder="Улица" [(ngModel)]="workerStreet">
+            <input type="text" name="house" placeholder="Дом" [(ngModel)]="workerHouse">
+            <input type="text" name="apartment" placeholder="Квартира" [(ngModel)]="workerApartment">
+          </fieldset>
+          
+        </form>
+      </div>
+    </div>
+
+    <div class="person-list-footer">
+      <button id="save" (click)="addWorker()">Добавить</button>
+      <button id="change" (click)="changeWorker(selectedWorker)">Сохранить изменения</button>
+      <button (click)="openClosePopUp()">Отмена</button>
+    </div>
+    
+  </div>
+</div>
+
+<div style="width: 100%; height: 105px;">
+  <div style="width: 100px; height: 100px; float: left; margin-right: 35px; border: 1px solid black; text-align: center; background-color: #0d1e30; font-size: 20px; 
+  color: white;">
+    1 - #0d1e30</div>
+  <div style="width: 100px; height: 100px; float: left; margin-right: 35px; border: 1px solid black; text-align: center; background-color: #2f455d; font-size: 20px; 
+  color: white;">
+    2 - #2f455d</div>
+  <div style="width: 100px; height: 100px; float: left; margin-right: 35px; border: 1px solid black; text-align: center; background-color: #717b7d; font-size: 20px; 
+  color: white;">
+    3 - #717b7d</div>
+  <div style="width: 100px; height: 100px; float: left; margin-right: 35px; border: 1px solid black; text-align: center; background-color: #bbbbb3; font-size: 20px;">
+    4 - #bbbbb3</div>
+  <div style="width: 100px; height: 100px; float: left; margin-right: 35px; border: 1px solid black; text-align: center; background-color: #f2f1ec; font-size: 20px;">
+    5 - #f2f1ec</div>
+</div>
+
