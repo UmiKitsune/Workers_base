@@ -147,7 +147,7 @@ fieldset {
     grid-template-columns: repeat(5, 1fr) 300px;
 }
 
-.headline-item, .person-item {
+/* .headline-item, .person-item {
     width: 15%;
-}
+} */
 
